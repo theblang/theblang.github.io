@@ -10,3 +10,9 @@ app.config(function ($mdThemingProvider) {
         .warnPalette('red')
         .backgroundPalette('grey');
 });
+
+app.controller('main', function($scope, $mdSidenav) {
+    $scope.toggleMenu = function () {
+        $mdSidenav('menu').toggle();
+    };
+});
