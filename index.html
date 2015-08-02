@@ -2,6 +2,7 @@
 <html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 
     <link rel="stylesheet"
@@ -10,161 +11,157 @@
 </head>
 <body layout="column">
 
-<md-content>
+<md-toolbar class="md-tall">
+    <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" aria-label="Settings">
+            <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+        </md-button>
+        <h2>
+            <span>Matt Langston</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-icon-button" aria-label="Favorite">
+            <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="More">
+            <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+        </md-button>
+    </div>
+</md-toolbar>
 
-    <md-toolbar>
-        <div class="md-toolbar-tools">
-            <md-button class="md-icon-button" aria-label="Settings">
-                <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
-            </md-button>
-            <h2>
-                <span>Matt Langston</span>
-            </h2>
-            <span flex></span>
-            <md-button class="md-icon-button" aria-label="Favorite">
-                <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
-            </md-button>
-            <md-button class="md-icon-button" aria-label="More">
-                <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
-            </md-button>
-        </div>
-    </md-toolbar>
+<md-content class="md-padding">
+    <md-tabs md-dynamic-height md-border-bottom md-stretch-tabs="always">
 
-    <md-content class="md-padding">
-        <md-tabs md-dynamic-height md-border-bottom md-stretch-tabs="always">
+        <md-tab label="About">
+            <md-content class="md-padding">
+                <h1 class="md-display-2">Tab Two</h1>
 
-            <md-tab label="About">
-                <md-content class="md-padding">
-                    <h1 class="md-display-2">Tab Two</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus
+                    volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium
+                    ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam
+                    erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor
+                    sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue
+                    ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et.
+                    Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at
+                    interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante.
+                    Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor
+                    purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus
-                        volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium
-                        ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam
-                        erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor
-                        sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue
-                        ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et.
-                        Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at
-                        interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante.
-                        Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor
-                        purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
+                <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec
+                    magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam
+                    in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci
+                    eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis.
+                    Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur,
+                    rhoncus sapien sit amet, tempus sapien.</p>
 
-                    <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec
-                        magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam
-                        in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci
-                        eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis.
-                        Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur,
-                        rhoncus sapien sit amet, tempus sapien.</p>
+                <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere
+                    molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat,
+                    at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent
+                    ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+            </md-content>
+        </md-tab>
 
-                    <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere
-                        molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat,
-                        at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent
-                        ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
-                </md-content>
-            </md-tab>
+        <md-tab label="Projects">
+            <md-content class="md-padding">
 
-            <md-tab label="Projects">
-                <md-content class="md-padding">
+                <md-card class="md-whiteframe-z5" flex>
+                    <md-card-content>
+                        <h3 class="md-title">MS Works</h3>
+                        <h4>test</h4>
+                        <md-chips>
+                            <md-chip>Android</md-chip>
+                            <md-chip>Spring</md-chip>
+                            <md-chip>iOS</md-chip>
+                        </md-chips>
+                    </md-card-content>
 
-                    <md-card class="md-whiteframe-z5" flex>
-                        <md-card-content>
-                            <h3 class="md-title">MS Works</h3>
-                            <h4>test</h4>
-                            <md-chips>
-                                <md-chip>Android</md-chip>
-                                <md-chip>Spring</md-chip>
-                                <md-chip>iOS</md-chip>
-                            </md-chips>
-                        </md-card-content>
+                    <div layout="row" layout-align="end center" layout-padding>
+                        <a href="https://play.google.com/store/apps/details?id=edu.msstate.nsparc.mdes">
+                            <img src="assets/en_app_rgb_wo_45.png"/>
+                        </a>
 
-                        <div layout="row" layout-align="end center" layout-padding>
-                            <a href="https://play.google.com/store/apps/details?id=edu.msstate.nsparc.mdes">
-                                <img src="assets/en_app_rgb_wo_45.png"/>
-                            </a>
+                        <a href="https://itunes.apple.com/us/app/ms-works/id773775917?mt=8">
+                            <img src="assets/Download_on_the_App_Store_Badge_US-UK_135x40.svg"/>
+                        </a>
+                    </div>
+                </md-card>
 
-                            <a href="https://itunes.apple.com/us/app/ms-works/id773775917?mt=8">
-                                <img src="assets/Download_on_the_App_Store_Badge_US-UK_135x40.svg"/>
-                            </a>
-                        </div>
-                    </md-card>
+                <md-card class="md-whiteframe-z5" flex>
+                    <md-card-content>
+                        <h3 class="md-title">[Medicine] - Patient management</h3>
+                        <h4>test</h4>
+                        <md-chips>
+                            <md-chip>Angular 1.x</md-chip>
+                            <md-chip>Firebase</md-chip>
+                            <md-chip>Swift</md-chip>
+                            <md-chip>Android</md-chip>
+                        </md-chips>
+                    </md-card-content>
 
-                    <md-card class="md-whiteframe-z5" flex>
-                        <md-card-content>
-                            <h3 class="md-title">[Medicine] - Patient management</h3>
-                            <h4>test</h4>
-                            <md-chips>
-                                <md-chip>Angular 1.x</md-chip>
-                                <md-chip>Firebase</md-chip>
-                                <md-chip>Swift</md-chip>
-                                <md-chip>Android</md-chip>
-                            </md-chips>
-                        </md-card-content>
+                    <div layout="row" layout-align="end center" layout-padding>
+                        <a href="https://play.google.com/store/apps/details?id=edu.msstate.nsparc.mdes">
+                            <img src="assets/150px-Imgur_logo.svg.png"/>
+                        </a>
+                    </div>
+                </md-card>
 
-                        <div layout="row" layout-align="end center" layout-padding>
-                            <a href="https://play.google.com/store/apps/details?id=edu.msstate.nsparc.mdes">
-                                <img src="assets/150px-Imgur_logo.svg.png"/>
-                            </a>
-                        </div>
-                    </md-card>
+                <md-card flex>
+                    <md-card-content>
+                        <h3 class="md-title">CRMS</h3>
+                        <h4>test</h4>
+                        <md-chips>
+                            <md-chip>Android</md-chip>
+                        </md-chips>
+                    </md-card-content>
 
-                    <md-card flex>
-                        <md-card-content>
-                            <h3 class="md-title">CRMS</h3>
-                            <h4>test</h4>
-                            <md-chips>
-                                <md-chip>Android</md-chip>
-                            </md-chips>
-                        </md-card-content>
+                    <div layout="row" layout-align="end center" layout-padding>
+                        <a href="https://play.google.com/store/apps/details?id=edu.msstate.nsparc.mdes">
+                            <img src="assets/150px-Imgur_logo.svg.png"/>
+                        </a>
+                    </div>
+                </md-card>
 
-                        <div layout="row" layout-align="end center" layout-padding>
-                            <a href="https://play.google.com/store/apps/details?id=edu.msstate.nsparc.mdes">
-                                <img src="assets/150px-Imgur_logo.svg.png"/>
-                            </a>
-                        </div>
-                    </md-card>
+            </md-content>
+        </md-tab>
+        <md-tab label="Work">
+            <md-content class="md-padding">
+                <h1 class="md-display-2">Tab Two</h1>
 
-                </md-content>
-            </md-tab>
-            <md-tab label="Work">
-                <md-content class="md-padding">
-                    <h1 class="md-display-2">Tab Two</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus
+                    volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium
+                    ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam
+                    erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor
+                    sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue
+                    ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et.
+                    Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at
+                    interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante.
+                    Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor
+                    purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus
-                        volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium
-                        ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam
-                        erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor
-                        sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue
-                        ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et.
-                        Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at
-                        interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante.
-                        Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor
-                        purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
+                <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec
+                    magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam
+                    in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci
+                    eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis.
+                    Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur,
+                    rhoncus sapien sit amet, tempus sapien.</p>
 
-                    <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec
-                        magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam
-                        in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci
-                        eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis.
-                        Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur,
-                        rhoncus sapien sit amet, tempus sapien.</p>
+                <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere
+                    molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat,
+                    at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent
+                    ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+            </md-content>
+        </md-tab>
+        <md-tab label="Education">
+            <md-content class="md-padding">
+                <h1 class="md-display-2">Tab Three</h1>
 
-                    <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere
-                        molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat,
-                        at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent
-                        ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
-                </md-content>
-            </md-tab>
-            <md-tab label="Education">
-                <md-content class="md-padding">
-                    <h1 class="md-display-2">Tab Three</h1>
-
-                    <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere
-                        molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat,
-                        at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent
-                        ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
-                </md-content>
-            </md-tab>
-        </md-tabs>
-    </md-content>
-
+                <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere
+                    molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat,
+                    at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent
+                    ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+            </md-content>
+        </md-tab>
+    </md-tabs>
 </md-content>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
