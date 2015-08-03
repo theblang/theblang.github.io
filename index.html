@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -48,7 +48,7 @@
     <div class="jumbotron">
         <img id="gravatar" class="gravatar" src="http://www.gravatar.com/avatar/39c8bb422491b482a34fb5726ddb9b96?s=250.png"/>
 
-        <h1>Navbar example</h1>
+        <h3>Navbar example</h3>
         <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
         <p>To see the difference between static and fixed top navbars, just scroll.</p>
         <p>
@@ -58,10 +58,32 @@
 
     <div class="panel panel-default">
         <div class="panel-heading">
+
+            <div class="dropdown pull-right">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action 1</a></li>
+                    <li><a href="#">Action 2</a></li>
+                    <li><a href="#">Action 3</a></li>
+                </ul>
+            </div>
+
             <h3 class="panel-title">MS Works</h3>
         </div>
         <div class="panel-body">
-            Panel content
+            <p>The MS Works mobile app brings the features from <a href="https://wings.mdes.ms.gov/">WINGS</a>, a web
+                application built for the Mississippi Department of Employment Security (MDES), natively to the Android
+                and iOS platforms.  I built the Android version from the ground up, and later managed one of our entry
+                level workers in development of version 2.0.  In addition, I assist in maintenance of the iOS Objective-C
+                version.
+            </p>
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="" alt="...">
+                </a>
+            </div>
         </div>
     </div>
 
@@ -95,6 +117,6 @@
 </div> <!-- /container -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 </html>
