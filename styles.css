@@ -1,3 +1,11 @@
+.panel-primary {
+    border-color: #34495E !important;
+}
+
+.panel-heading {
+    background: #34495E !important;
+}
+
 .gravatar {
     border-radius:125px;
     display: block;
@@ -27,8 +35,4 @@
     .gravatar {
         height:200px;
     }
-}
-
-.project img {
-    width: auto;
 }
