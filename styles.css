@@ -1,9 +1,16 @@
+.jumbotron {
+    border-radius: 0 !important;
+}
+.panel {
+    border-radius: 0 !important;
+}
 .panel-primary {
     border-color: #34495E !important;
 }
-
 .panel-heading {
     background: #34495E !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
 }
 
 .gravatar {
