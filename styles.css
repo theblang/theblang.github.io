@@ -1,10 +1,5 @@
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
 .navbar{
     margin: 0;
-    min-height: 75px;
 }
 
 .gravatar {
