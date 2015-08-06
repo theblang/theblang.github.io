@@ -6,29 +6,28 @@
     border-radius:125px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
 }
 
 @media(max-width:767px){
     .gravatar {
-        height:125px;
+        height:100px;
     }
 }
 
 @media(min-width:768px){
     .gravatar {
-        height:150px;
+        height:125px;
     }
 }
 
 @media(min-width:992px){
     .gravatar {
-        height:175px;
+        height:140px;
     }
 }
 
 @media(min-width:1200px){
     .gravatar {
-        height:200px;
+        height:150px;
     }
 }
