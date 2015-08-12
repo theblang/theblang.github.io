@@ -101,7 +101,8 @@
                     flow.
                 </div>
                 <ul class="list-group">
-                    <li class="list-group-item"><a href="http://medicine-uat.herokuapp.com/#/">Access on Heroku</a></li>
+                    <li class="list-group-item"><a href="http://medicine-uat.herokuapp.com/#/" data-toggle="tooltip"
+                                                   title="Free tier may cause delay">Access on Heroku</a></li>
                     <li class="list-group-item"><a href="https://www.youtube.com/watch?v=pQ6RxEZhB6g">View YouTube
                         demo</a>
                     </li>
@@ -169,6 +170,12 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 
 </body>
 </html>
